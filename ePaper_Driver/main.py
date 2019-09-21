@@ -9,6 +9,8 @@ import traceback
 try:
     epd = epd7in5.EPD()
     epd.init()
+    epd.Clear(0xFF)
+
     
     print "read bmp file"
     Himage = Image.open('/home/pi/SmartPictureFrame/images/K_L1.bmp')
