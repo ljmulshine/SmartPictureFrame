@@ -18,7 +18,7 @@ try:
         imagePath = '/home/pi/SmartPictureFrame/images/K_L9.bmp'
     else:
         # select random image from image directory
-        imageNumber = random.randint(1,len(os.listdir('/home/pi/SmartPictureFrame/images')))
+        imageNumber = random.randint(1,len(os.listdir('/home/pi/SmartPictureFrame/images')) - 1)
         imagePath = '/home/pi/SmartPictureFrame/images/K_L' + str(imageNumber) + '.bmp'
 
     # display image
