@@ -8,20 +8,20 @@ from skimage.transform import resize, rotate
 from PIL import Image
 
 
-image = io.imread("JPGS/IMG_7853.jpg", as_grey=True)
+image = io.imread("JPGS/IMG_11.jpg", as_grey=True)
 image = resize(image, (384, 640), mode='symmetric')
 image = rotate(image, 0)
 
 
 bitmap = np.array(image) * 255
 print(bitmap)
-bitmap = np.dot((bitmap > 105).astype(float), 255)
+bitmap = np.dot((bitmap > 110).astype(float), 255)
 print(bitmap)
 
 plt.imshow(bitmap, cmap='gray')
 plt.show()
 im=Image.fromarray(bitmap.astype(np.uint8))
-im.save('K_L17.bmp')
+im.save('K_L30.bmp')
 
 
 #nPhoto = 5

@@ -14,8 +14,8 @@ try:
     
     if(time.strftime("%d %b", time.localtime()) == "07 Oct"):
         imagePath = '/home/pi/SmartPictureFrame/images/HAPPY_BIRTHDAY.bmp'
-    elif(time.strftime("%d %b", time.localtime()) == "04 Oct"):
-        imagePath = '/home/pi/SmartPictureFrame/images/K_L9.bmp'
+    elif(time.strftime("%d %b", time.localtime()) == "25 Nov"):
+        imagePath = '/home/pi/SmartPictureFrame/images/K_L26.bmp'
     else:
         # select random image from image directory
         imageNumber = random.randint(1,len(os.listdir('/home/pi/SmartPictureFrame/images')) - 1)
